@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Howeprac1</title>
+
+ <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/styleshit.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+
+
+          <ul id="scene">
+             <li class="layer" data-depth="0.00"><img src="images/bgsm.jpg"></li>
+             <li class="layer" data-depth="0.80"><img src="images/skullcyansm.png"></li>
+             <li class="layer" data-depth="0.20"><img src="images/skullmagentasm.png"></li>
+             <li class="layer" data-depth="0.50"><img src="images/skullsm.png"></li>
+          </ul>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+      var scene = document.getElementById('scene');
+      var parallax = new Parallax(scene);
+    </script>
+  </body>
+</html>
